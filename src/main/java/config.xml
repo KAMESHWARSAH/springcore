@@ -17,5 +17,12 @@
 		<property name="StudentAddress" value="Bihar" />
 		<property name="StudentEmail" value="pankajkumarsah@gmail.com" />
 	</bean>
+	
+	<bean class="com.springcore.Student" name="mystudent2">
+		<property name="studentId" value="401" />
+		<property name="StudentName" value="Deep Kumar  Sah" />
+		<property name="StudentAddress" value="Uttar Perdesh" />
+		<property name="StudentEmail" value="deepkumarsah@gmail.com" />
+	</bean>
 
 </beans>
