@@ -4,6 +4,14 @@ public class Student {
 private int studentId;
 private String StudentName;
 private String StudentAddress;
+private String StudentEmail;
+
+public String getStudentEmail() {
+	return StudentEmail;
+}
+public void setStudentEmail(String studentEmail) {
+	StudentEmail = studentEmail;
+}
 public int getStudentId() {
 	return studentId;
 }
@@ -22,11 +30,12 @@ public String getStudentAddress() {
 public void setStudentAddress(String studentAddress) {
 	StudentAddress = studentAddress;
 }
-public Student(int studentId, String studentName, String studentAddress) {
+public Student(int studentId, String studentName, String studentAddress,String studentEString) {
 	super();
 	this.studentId = studentId;
 	StudentName = studentName;
 	StudentAddress = studentAddress;
+	StudentEmail= StudentEmail;
 }
 public Student() {
 	super();
@@ -35,7 +44,8 @@ public Student() {
 @Override
 public String toString() {
 	return "Student [studentId=" + studentId + ", StudentName=" + StudentName + ", StudentAddress=" + StudentAddress
-			+ "]";
+			+ ", StudentEmail=" + StudentEmail + "]";
 }
+
 
 }
