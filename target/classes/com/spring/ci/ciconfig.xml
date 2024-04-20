@@ -5,21 +5,36 @@
 	xmlns:context="
  http:www.springfremwork.org.schema/context"
 	xmlns:p="http://www.springfremwork.org/schema/p"
+	xmlns:c="http://www.springfremwork.org/schema/c"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
 						https://www.springframework.org/schema/context http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
+<!-- 
+<bean class="com.spring.ci.Certi" name="crt">
+	<constructor-arg>
+		<value>Java IS Good Language</value>
+	</constructor-arg>
+</bean>
+-->
 <bean class="com.spring.ci.Certi" name="crt">
 	<constructor-arg>
 		<value>Java IS Good Language</value>
 	</constructor-arg>
 </bean>
 
+
 	<bean class="com.spring.ci.Person" name="person">
 		<constructor-arg value="kameshwar sah" />
 		<constructor-arg value="2000" type="int" />
 		<constructor-arg ref="crt"></constructor-arg>
-
+		
+	</bean>
+	
+	
+	<bean class="com.spring.ci.Addition" name="add">
+		<constructor-arg value="12"  index="1"/>
+		<constructor-arg value="42"  index="0"/>
 	</bean>
 
 </beans>
