@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="
+ http:www.springfremwork.org.schema/context"
+	xmlns:p="http://www.springfremwork.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+						https://www.springframework.org/schema/context http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean class="com.spring.ci.Certi" name="crt">
+	<constructor-arg>
+		<value>Java IS Good Language</value>
+	</constructor-arg>
+</bean>
+
+	<bean class="com.spring.ci.Person" name="person">
+		<constructor-arg value="kameshwar sah" />
+		<constructor-arg value="2000" type="int" />
+		<constructor-arg ref="crt"></constructor-arg>
+
+	</bean>
+
+</beans>
