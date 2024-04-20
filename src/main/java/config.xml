@@ -9,8 +9,28 @@
  https://www.springframework.org/schema/context
  http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- Your bean definitions go here -->
-    
+    <!-- Method 1 -->
+    <!-- 
+    <bean class="com.springcore.Student" name="mystudent">
+		<property name="studentId" value="301" />
+		<property name="StudentName">
+			<value>Kameshwar Sah</value>
+		</property>
+
+		<property name="StudentAddress">
+			<value>Bihar</value>
+		</property>
+		
+		<property name="StudentEmail">
+			<value>kameshwarsah@gmail.com</value>
+		</property>
+
+	</bean>
+	-->
+	
+	
+	<!-- Method 2-->
+	   <!-- 
     <bean class="com.springcore.Student" name="mystudent">
 		<property name="studentId" value="301" />
 		<property name="StudentName" value="Pankaj Kumar  Sah" />
@@ -24,5 +44,11 @@
 		<property name="StudentAddress" value="Uttar Perdesh" />
 		<property name="StudentEmail" value="deepkumarsah@gmail.com" />
 	</bean>
+	
+	-->
+	<!-- Method 3-->
+	<bean class="com.springcore.Student" name="mystudent"  p:studentId="20001"  p:StudentName="Nishant"  p:StudentAddress="Delhi"  p:StudentEmail="pk@gmail.com" />
+	<bean class="com.springcore.Student" name="mystudent2"  p:studentId="20001"  p:StudentName="Vishal"  p:StudentAddress="Delhi"  p:StudentEmail="pk@gmail.com" />
+
 
 </beans>
